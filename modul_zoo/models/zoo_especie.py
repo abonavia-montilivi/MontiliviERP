@@ -5,4 +5,4 @@ class zoo_especie(models.Model):
     familia = fields.Char('Familia')
     nomCientific = fields.Char('Nom Cientific')
     nomVulgar = fields.Char('Nom Vulgar')
-    Perill = fields.Char('Perill')
+    perill = fields.Boolean('Perill')
