@@ -5,3 +5,6 @@ class zoo_animal(models.Model):
     dataNaix = fields.Date('Data de naixement')
     paisOrigen = fields.Char('Pais Origen')
     sexe = fields.Char('Sexe')
+
+    zoo_id = fields.Many2one('zoo.zoo', string='Zoo')
+    especie_id = fields.Many2one('zoo.especie',string='Especie')

@@ -5,3 +5,5 @@ class plane_avio(models.Model):
     marca = fields.Integer('marca')
     model = fields.Char('Model')
     maxVel = fields.Float('Maxima Velocitat')
+
+    vol_ids = fields.One2many('plane.vol','avio_id', string='Vols')
