@@ -60,7 +60,7 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form>
-                <group>
+                <group col="4">
                     <field name="passatgers"/>
                     <field name="dataSortida"/>
                     <field name="dataArrivada"/>
@@ -72,22 +72,7 @@
             </form>
         </field>
     </record>
-<!--
-	<record model="ir.ui.view" id="view_plane_vol_form">
-		<field name="name">plane_vol</field>
-		<field name="model">plane.vol</field>
-		<field name="type">form</field>
-		<field name="arch" type="xml">
-			<form>
-				<group col="4">
-					<field name="passatgers"/>
-					<field name="dataSortida"/>
-					<field name="dataArrivada"/>
-				</group>
-			</form>
-		</field>
-	</record>
-	-->	
+
 	<!--Accions-->
 	<record model="ir.actions.act_window" id="action_plane_aeroport_tree">
 		<field name="name">Aeroport</field>
